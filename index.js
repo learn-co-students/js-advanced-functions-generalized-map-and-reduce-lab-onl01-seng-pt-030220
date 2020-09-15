@@ -8,11 +8,7 @@ const map = (array, fn) => {
 
 const reduce = (array, fn, acc = 0) => {
   for(let n of array){
-    if (acc === 0){
-      acc = n 
-    }else{
-      acc = fn(n, acc)
-    }
+    acc = acc === 0 ? n : fn(n, acc)
   }
   return acc
 }
