@@ -10,8 +10,10 @@ function map(sourceArray,callBackFunc ){
 }
 
 
-function reduce(sourceArray,startingPoint =3 ){
-     sourceArray.forEach(el => {
-         return callBackFunc(el)
-   } )
+function reduce(src, startingPoint=0) {
+  let total = startingPoint
+  for (let i = 0; i < src.length; i++ ) {
+    total = total + src[i]
+  }
+  return total
 }
