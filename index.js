@@ -26,10 +26,10 @@ function reduce(sourceArray,callBackFunc,startingPoint)
       //We put total  to first element ,because reduce by defalut will
       // choose first element if no startingPoint or initial value
       //  total =sourceArray[0],when we put total =0 test not getting pased,because
-      // he said all values not true because of total =0 it's false value,and acumalator
+      // he said all values not true because of total = 0 it's false value,and acumalator
       // should not start with default value zero
       //it start with first element of array
-      //total =0
+      
       total =sourceArray[0]
       for(let i=1;i< sourceArray.length;i++){
          total =callBackFunc(total,sourceArray[i])
