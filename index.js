@@ -5,6 +5,17 @@ const map = function(array, funk){
   return newArr
 }
 
+// function map(src, cb) {
+//   let r = []
+
+//   for (let i = 0; i < src.length; i++) {
+//     let theElement = src[i]
+//     r.push(cb(theElement))
+//   }
+
+//   return r;
+// }
+
 
 
 const reduce = function(array, funk, startingPoint){
@@ -18,7 +29,13 @@ const reduce = function(array, funk, startingPoint){
   return startingPoint
 }
 
-// takes and array and function, optional startingpoint
-// reduces each el in array through passed in function.
-// returns a value
+// function reduce(src, cb, starting){
+//   let r = (!!starting) ? starting : src[0]
+//   let i = (!!starting) ? 0 : 1
 
+//   for (; i < src.length; i++) {
+//     r = cb(src[i], r)
+//   }
+
+//   return r;
+// }
